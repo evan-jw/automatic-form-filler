@@ -35,3 +35,7 @@ Please have the Chrome browser installed. Go to command line console, go to proj
 
 - The field and the value elements are differentiate using element's ID.
 - The import form available as local file (otherwise we will have cross-origin-request issue).
+
+## Others
+
+- The sample forms to be imported can be found at /forms folder
