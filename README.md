@@ -4,12 +4,14 @@ A simple javascript app to read HTML document and automatically generate a form
 ## How to run the code & unit test
 
 Assume node js already installed and ready to run npm command. 
-The installer can be downloaded at https://nodejs.org/en/download/ .
+The installer can be downloaded at https://nodejs.org/en/download/. The steps:
 
-1. Install all modules dependencies
+1.Install all modules dependencies
+
 Start the command line, go to project's root folder and type 'npm-install'.
 
-2. Deploy to server (the server in this example is IIS 7) & run the application
+2.Deploy to server (the server in this example is IIS 7) & run the application
+
 - Go to run command and type 'inetmgr'.
 - Navigate to PC --> Sites --> Default Web Site.
 - Right-click and select 'Add Application'.
@@ -17,7 +19,8 @@ Start the command line, go to project's root folder and type 'npm-install'.
 - Right-click the newly created web app (refresh if it's not appearing under 'Default Web Site'), choose Manage Applications --> Browse.
 - Once the browser comes up change the url to : 'http://localhost/[your alias from previous step here]/test-form.html'.
 
-3. Run the unit test
+3.Run the unit test
+
 Please have the Chrome browser installed. Go to command line console, go to project's folder and type 'npm test'.
 
 ## Approach
