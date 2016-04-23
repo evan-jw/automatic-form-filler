@@ -1,3 +1,8 @@
+function getMapping(formId){
+	// get the mapping based on the config file
+	return mapping[formId];
+}
+
 function fill(targetDoc, data){
 	// Write the content HTML element
 	var content = '';
@@ -18,16 +23,19 @@ function getPersonalData(importDoc){
 	// the result array
 	var data = [];
 	
-	// Get the field and value from the import document
-	var field = importDoc.getElementById('fName').innerHTML.trim();
-	var value = importDoc.getElementById('fNameVal').innerHTML.trim();
+	// Get mapping object based on the config
+	var mapObj = getMapping(config.formId);
 	
-	// Push into data array
-	data.push({
-		field: field,
-		value: value
-	});
-	
+	// Loop through the map object
+	for(var i=0;i < mapObj.length;i++){
+        var map = mapObj[i];
+		
+		// push the field and value to the data array
+		data.push({
+			field: importDoc.getElementById(map.fieldId).innerHTML.trim(),
+			value: importDoc.getElementById(map.fieldValId).innerHTML.trim(),
+		});
+    }
 	return data;
 }
 
