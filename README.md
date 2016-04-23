@@ -8,16 +8,16 @@ The installer can be downloaded at https://nodejs.org/en/download/ .
 
 1. Install all modules dependencies
 
-Start the command line, go to project's root folder and type 'npm-install'
+Start the command line, go to project's root folder and type 'npm-install'.
 
 2. Deploy to server (the server in this example is IIS 7) & run the application
 
-- Go to run command and type 'inetmgr'
-- Navigate to PC --> Sites --> Default Web Site
-- Right-click and select 'Add Application'
-- Put any alias and select the project's folder then click 'Ok'
+- Go to run command and type 'inetmgr'.
+- Navigate to PC --> Sites --> Default Web Site.
+- Right-click and select 'Add Application'.
+- Put any alias and select the project's folder then click 'Ok'.
 - Right-click the newly created web app (refresh if it's not appearing under 'Default Web Site'), choose Manage Applications --> Browse.
-- Once the browser comes up change the url to : 'http://localhost/[your alias from previous step here]/test-form.html'
+- Once the browser comes up change the url to : 'http://localhost/[your alias from previous step here]/test-form.html'.
 
 3. Run the unit test
 
