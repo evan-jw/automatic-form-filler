@@ -1,7 +1,14 @@
 {
   "name": "form-filler-project",
   "version": "0.1.0",
+  "scripts": {
+    "test": "karma start karma.conf.js"
+  },
   "devDependencies": {
-    "grunt": "~0.4.1"
+    "grunt": "~0.4.1",
+    "jasmine-core": "^2.4.1",
+    "karma": "^0.13.22",
+    "karma-chrome-launcher": "^0.2.3",
+    "karma-jasmine": "^0.3.8"
   }
 }
